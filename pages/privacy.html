@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Privacidad</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
+    <header class="bg-[#0f172a] text-[#e2e8f0] py-4 border-b border-[#1e293b]">
+      <div class="max-w-[1100px] mx-auto px-4 flex items-center justify-between py-4">
         <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
+        <nav id="menu-principal" class="flex gap-6">
           <a href="../index.html">Inicio</a>
           <a href="./about.html">Sobre el curso</a>
           <a href="./faq.html">FAQ</a>
@@ -20,16 +21,16 @@
     </header>
 
     <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Politica de privacidad</h1>
+      <section class="max-w-[1100px] mx-auto px-4 py-12">
+        <div class="bg-white border border-[#cbd5e1] rounded-xl p-8 shadow-md mb-8">
+          <h1 class="text-3xl font-bold text-[#0f172a] mb-4">Politica de privacidad</h1>
           <p>
           Esta pagina sirve para practicar bloques informativos, listas y estilos con jerarquia visual.
           </p>
         </div>
 
-        <div id="privacy-cards" class="privacy-cards">
-          <article class="privacy-card">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 shadow-sm">
             <h2>Datos recopilados</h2>
             <ul>
               <li>Nombre y apellido</li>
@@ -37,9 +38,9 @@
               <li>Actividad dentro del campus</li>
             </ul>
           </article>
-          <article class="privacy-card">
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 shadow-sm">
             <h2>Uso de la informacion</h2>
-            <ul>
+            <ul class="list-disc pl-5 mt-4 space-y-2 text-[#475569]">
               <li>Seguimiento de progreso academico</li>
               <li>Feedback personalizado de actividades</li>
               <li>Comunicacion de novedades del curso</li>
@@ -49,10 +50,10 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer class="bg-white border-t border-[#cbd5e1] py-8 mt-12">
+      <div class="max-w-[1100px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-[#475569] text-sm">
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        <p class="font-bold text-[#0f172a]">Desarrollado por MATIAS CASTILLO</p>
       </div>
     </footer>
   </body>
