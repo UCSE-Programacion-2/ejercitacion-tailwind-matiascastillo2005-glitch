@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Sobre el curso</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
+    <header class="bg-[#0f172a] text-[#e2e8f0] py-4 border-b border-[#1e293b]">
+      <div class="max-w-[1100px] mx-auto px-4 flex items-center justify-between py-4">
         <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
+        <nav id="menu-principal" class="flex gap-6">
           <a href="../index.html">Inicio</a>
           <a class="is-active" href="./about.html">Sobre el curso</a>
           <a href="./faq.html">FAQ</a>
@@ -20,40 +21,40 @@
     </header>
 
     <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Sobre esta practica</h1>
+      <section class="max-w-[1100px] mx-auto px-4 py-12">
+        <div class="bg-white border border-[#cbd5e1] rounded-xl p-8 shadow-md mb-10">
+          <h1 class="text-3xl font-bold text-[#0f172a] mb-4">Sobre esta practica</h1>
           <p>
           Esta pagina entrena composicion con bloques, tipografia y grillas responsive.
           Deberias reutilizar patrones visuales del home para mantener consistencia.
           </p>
         </div>
 
-        <div id="stats-grid" class="stats-grid">
-          <article class="stat-card">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
             <p class="stat-label">Duracion sugerida</p>
             <p class="stat-value">90 min</p>
           </article>
-          <article class="stat-card">
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
             <p class="stat-label">Paginas a trabajar</p>
             <p class="stat-value">4</p>
           </article>
-          <article class="stat-card">
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
             <p class="stat-label">Utilidades esperadas</p>
             <p class="stat-value">20+</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Resultado</p>
-            <p class="stat-value">Deploy listo</p>
+          <article class="bg-white border border-[#cbd5e1] rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <p class="text-sm text-[#64748b] uppercase tracking-wider font-semibold">Resultado</p>
+            <p class="text-3xl font-bold text-[#0f172a] mt-2">Deploy listo</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer class="bg-white border-t border-[#cbd5e1] py-8 mt-12">
+      <div class="max-w-[1100px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-[#475569] text-sm">
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        <p class="font-bold text-[#0f172a]">Desarrollado por MATIAS CASTILLO</p>
       </div>
     </footer>
   </body>
